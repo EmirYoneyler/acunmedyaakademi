@@ -1,0 +1,28 @@
+﻿@model acunmedyaakademi.Models.tblProject
+@{
+    ViewBag.Title = "UpdateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>UpdateProject</h2>
+
+<form method="post">
+    <label>Proje ID</label>
+    <input type="text" class=" form-control" name="ProjectId" value="@Model.ProjectId" />
+
+    <label>Proje Adı</label>
+    <input type="text" class=" form-control" name="ProjectName" value="@Model.ProjectName" />
+
+    <label>Proje Resmi</label>
+    <input type="text" class=" form-control" name="ProjectImageUrl" value="@Model.ProjectImageUrl" />
+
+    <label>Proje Kategorisi</label>
+    <input type="text" class=" form-control" name="ProjectCategory" value="@Model.ProjectCategory" />
+
+    <label>Proje Github Linki</label>
+    <input type="text" class=" form-control" name="ProjectGitLink" value="@Model.ProjectGitLink" />
+
+    <br />
+    <button class="btn btn-info">Projeyi Güncelle</button>
+</form>
+
