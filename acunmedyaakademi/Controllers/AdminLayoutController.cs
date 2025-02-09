@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AcunMedyaAkademiPortfolio.Controllers
+namespace acunmedyaakademi.Controllers
 {
     public class AdminLayoutController : Controller
     {

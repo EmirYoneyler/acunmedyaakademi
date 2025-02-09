@@ -1,5 +1,4 @@
-﻿@model acunmedyaakademi.Models.SocialMedia
-
+﻿@model acunmedyaakademi.Models.TblSocialMedia
 @{
     ViewBag.Title = "UpdateSocialMedia";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -11,10 +10,10 @@
     <input type="text" class="form-control" name="SosyalMedyaId" value="@Model.SocialMediaId" />
 
     <label>Link</label>
-    <input type="text" class="form-control" name="SocialMediaUrl" value="@Model.SocialMediaUrl" />
+    <input type="text" class="form-control" name="SocialMediaUrl" value="@Model.İconUrl" />
 
     <label>İkonUrl</label>
-    <input type="text" class="form-control" name="SocialMediaImageUrl" value="@Model.SocialMediaImageUrl" />
+    <input type="text" class="form-control" name="SocialMediaImageUrl" value="@Model.İconimage" />
 
     <br /><br />
     <button class="btn btn-info">Güncelle</button>

@@ -1,4 +1,6 @@
-﻿@model List<acunmedyaakademi.Models.TblCategory>
+﻿
+
+@model List<acunmedyaakademi.Models.TblCategory>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -6,24 +8,25 @@
 
 <h2>Index</h2>
 
-<table class="table table-bordered"> 
-<tr>
-    <th>Id</th>
-    <th>İsim</th>
-    
-    <th>Güncelle</th>
-    <th>Sil</th>
-</tr>
-@foreach (var item in Model)
-{
+<table class="table table-bordered">
     <tr>
-        <td>@item.CategoryId</td>
-        <td>@item.CategoryName</td>
-     
-        <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-warning">Güncelle</a></td>
-        <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
+        <th>Id</th>
+        <th>İsim</th>
+
+        <th>Güncelle</th>
+        <th>Sil</th>
     </tr>
-}
+    
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.CategoryId</td>
+            <td>@item.CategoryName</td>
+
+            <td><a href="/Category/UpdateCategory/@item.CategoryId" class="btn btn-warning">Güncelle</a></td>
+            <td><a href="/Category/DeleteCategory/@item.CategoryId" class="btn btn-danger">Sil</a></td>
+        </tr>
+    }
 </table>
 
 

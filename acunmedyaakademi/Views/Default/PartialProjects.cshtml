@@ -1,5 +1,4 @@
-﻿
-@model List<acunmedyaakademi.Models.TblProject>
+﻿@model List<acunmedyaakademi.Models.TblProject>
 
 <section class="ftco-section ftco-project" id="projects-section">
     <div class="container-fluid px-md-4">
@@ -18,6 +17,7 @@
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
                             <h3><a href="#">@item.ProjectName</a></h3>
+                            <h6>@(item.TblCategory != null ? item.TblCategory.CategoryName : "Kategori Yok")</h6>
                         </div>
                     </div>
                 </div>

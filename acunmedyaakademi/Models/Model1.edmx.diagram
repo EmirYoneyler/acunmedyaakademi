@@ -9,16 +9,17 @@
         <EntityTypeShape EntityType="DbPortfolyoModel.TblAbout" Width="1.5" PointX="2.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblAdress" Width="1.5" PointX="4.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblBanner" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbPortfolyoModel.TblCategory" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblContact" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblFeature" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbPortfolyoModel.TblHobby" Width="1.5" PointX="6.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblProfile" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbPortfolyoModel.TblProject" Width="1.5" PointX="3" PointY="0.875" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblService" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblSkill" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="DbPortfolyoModel.TblTestimonial" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
-        <AssociationConnector Association="DbPortfolyoModel.FK_TblProject_TblCategory1" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="DbPortfolyoModel.TblSocialMedia" Width="1.5" PointX="0.75" PointY="9.75" />
+        <EntityTypeShape EntityType="DbPortfolyoModel.TblHobby" Width="1.5" PointX="6.625" PointY="4.25" />
+        <EntityTypeShape EntityType="DbPortfolyoModel.TblCategory" Width="1.5" PointX="3.375" PointY="10.125" />
+        <EntityTypeShape EntityType="DbPortfolyoModel.TblProject" Width="1.5" PointX="5.625" PointY="9.875" />
+        <AssociationConnector Association="DbPortfolyoModel.FK_TblProject_TblCategory" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

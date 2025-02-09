@@ -31,15 +31,16 @@ namespace acunmedyaakademi.Models
         public virtual DbSet<TblAbout> TblAbout { get; set; }
         public virtual DbSet<TblAdress> TblAdress { get; set; }
         public virtual DbSet<TblBanner> TblBanner { get; set; }
-        public virtual DbSet<TblCategory> TblCategory { get; set; }
         public virtual DbSet<TblContact> TblContact { get; set; }
         public virtual DbSet<TblFeature> TblFeature { get; set; }
-        public virtual DbSet<TblHobby> TblHobby { get; set; }
         public virtual DbSet<TblProfile> TblProfile { get; set; }
-        public virtual DbSet<TblProject> TblProject { get; set; }
         public virtual DbSet<TblService> TblService { get; set; }
         public virtual DbSet<TblSkill> TblSkill { get; set; }
         public virtual DbSet<TblTestimonial> TblTestimonial { get; set; }
+        public virtual DbSet<TblSocialMedia> TblSocialMedia { get; set; }
+        public virtual DbSet<TblHobby> TblHobby { get; set; }
+        public virtual DbSet<TblCategory> TblCategory { get; set; }
+        public virtual DbSet<TblProject> TblProject { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {
@@ -142,6 +143,11 @@ namespace acunmedyaakademi.Models
         public virtual int sp_upgraddiagrams()
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction("sp_upgraddiagrams");
+        }
+    
+        public virtual ObjectResult<string> GetLastSkillTitle()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<string>("GetLastSkillTitle");
         }
     }
 }

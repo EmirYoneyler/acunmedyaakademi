@@ -1,4 +1,4 @@
-﻿@model List<acunmedyaakademi.Models.SocialMedia>
+﻿@model List<acunmedyaakademi.Models.TblSocialMedia>
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -23,9 +23,9 @@
         {
             <tr>
                 <td>@item.SocialMediaId</td>
-                <td>@item.SocialMediaUrl</td>
+                <td>@item.İconUrl</td>
                 <td align="center">
-                    <img src="@item.SocialMediaImageUrl" style="width:150px" />
+                    <img src="@item.İconimage" style="width:150px" />
                 </td>
                 <td>
                     <a href="/SocialMedia/UpdateSocialMedia/@item.SocialMediaId" class="btn btn-warning btn-sm">Güncelle</a>

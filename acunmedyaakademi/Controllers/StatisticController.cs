@@ -17,7 +17,7 @@ namespace AcunMedyaAkademiPortfollo.Controllers
             ViewBag.projectCount = db.TblCategory.Count();
             ViewBag.skillCount = db.TblSkill.Count();
             ViewBag.skillAvgValue = db.TblSkill.Average(X => X.Value);
-            //ViewBag.lastSkillTitleName = db.get().FirstOrDefault(); //veritabanında metot eksik gerek de yok bence uğraşma :) 
+            ViewBag.lastSkillTitleName = db.GetLastSkillTitle().FirstOrDefault(); //veritabanında metot eksik gerek de yok bence uğraşma :) 
             //ViewBag.mvcCategoryProjectCount = db.TblCategory.Where(x => x.CategoryId == 4).Count();
 
 

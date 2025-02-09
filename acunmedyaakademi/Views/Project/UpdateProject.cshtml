@@ -1,4 +1,4 @@
-﻿@model acunmedyaakademi.Models.tblProject
+﻿@model acunmedyaakademi.Models.TblProject
 @{
     ViewBag.Title = "UpdateProject";
     Layout = "~/Views/AdminLayout/Index.cshtml";
@@ -19,10 +19,10 @@
     <label>Proje Kategorisi</label>
     <input type="text" class=" form-control" name="ProjectCategory" value="@Model.ProjectCategory" />
 
-    <label>Proje Github Linki</label>
-    <input type="text" class=" form-control" name="ProjectGitLink" value="@Model.ProjectGitLink" />
+    @*<label>Proje Github Linki</label>
+    <input type="text" class=" form-control" name="ProjectGitLink" value="@Model." />
 
-    <br />
+    <br />*@
     <button class="btn btn-info">Projeyi Güncelle</button>
 </form>
 

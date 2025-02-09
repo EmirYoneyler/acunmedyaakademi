@@ -37,13 +37,13 @@ namespace acunmedyaakademi.Controllers
             return RedirectToAction("Index");
         }
         [HttpGet]
-        public ActionResult UpdateFeature(int id)
+        public ActionResult UpdateData(int id)
         {
             var value = db.TblFeature.Find(id);
             return View(value);
         }
         [HttpPost]
-        public ActionResult UpdateFeature(TblFeature p)
+        public ActionResult UpdateData(TblFeature p)
         {
             var value = db.TblFeature.Find(p.FeatureId);
             value.FeatureTitle = p.FeatureTitle;

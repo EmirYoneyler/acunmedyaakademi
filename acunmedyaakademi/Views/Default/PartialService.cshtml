@@ -15,20 +15,32 @@
         <div class="row">
             @foreach (var item in Model)
             {
-                <div class="col-md-6 col-lg-3">
-                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
-                        <div class="icon d-flex align-items-center justify-content-center" style="position: relative;">
-                            <div class="circle-background" style="position: absolute; width: 100px; height: 100px; border-radius: 50%; background-color: rgba(0, 0, 0, 0.1); z-index: -1;"></div>
-                            <img src="@item.IconUrl" alt="@item.Title" style="width: 50px; height: 50px; position: relative; z-index: 1;" />
-                        </div>
-                        <div class="media-body">
-                            <h3 class="heading mb-3">@item.Title</h3>
-                            <p>@item.Description</p>
+                @*<div class="col-md-6 col-lg-3">
+                <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate">
+                    <div class="icon d-flex align-items-center justify-content-center" style="position: relative;">
+                        <div class="circle-background" style="position: absolute; width: 100px; height: 100px; border-radius: 50%; background-color: rgba(0, 0, 0, 0.1); z-index: -1;"></div>
+                        <img class="@item.IconUrl" alt="@item.Title" style="width: 50px; height: 50px; position: relative; z-index: 1;" />
+                    </div>
+                    <div class="media-body">
+                        <h3 class="heading mb-3">@item.Title</h3>
+                        <p>@item.Description</p>
 
+                    </div>
+                </div>
+            </div>*@
+
+                <div class="col-md-6 col-lg-3" bis_skin_checked="1">
+                    <div class="media block-6 services d-block bg-white rounded-lg shadow ftco-animate fadeInUp ftco-animated" bis_skin_checked="1">
+                        <div class="icon d-flex align-items-center justify-content-center" bis_skin_checked="1"><span class="@item.IconUrl"></span></div>
+                        <div class="media-body" bis_skin_checked="1">
+                            <h3 class="heading mb-3">@item.Title</h3>
+                            <p>@item.Description.</p>
                         </div>
                     </div>
                 </div>
+
             }
+
         </div>
 
 
