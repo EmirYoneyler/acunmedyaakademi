@@ -16,7 +16,7 @@ namespace acunmedyaakademi.Controllers
             var values = db.TblProfile.ToList();
             return View(values);
         }
-        [HttpGet]
+        [HttpGet]//ekleme
         public ActionResult CreateProfile()
         {
             return View();
