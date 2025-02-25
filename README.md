@@ -23,3 +23,6 @@ Bu portföy, şahsî bir çalışma olup **AcunMedya Akademi** projesi kapsamın
 - 🛢️ **Microsoft SQL Server** - Verilerin güvenli ve düzenli saklanmasını sağlayan sistem.  
 
 📌 **Bu çalışma, bilginin ışığında, azim ve kararlılıkla inşa edilmiştir.**  
+![image](https://github.com/user-attachments/assets/18441982-6c19-4890-9d47-58664f80320a)
+![image](https://github.com/user-attachments/assets/985df8e0-8ca8-4b98-b2e2-da9e81ee5340)
+![image](https://github.com/user-attachments/assets/be2f7ba0-0ccd-45e0-9841-610b188390f0)
